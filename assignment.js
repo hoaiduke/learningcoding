@@ -56,3 +56,12 @@ if (scoreDolphins >= 100 && scoreKoalas >= 100 && scoreDolphins > scoreKoalas) {
     console.log(`No one win the trophy`);
 }
 */
+// Coding Challenge 4:
+/*
+const bill = 430; // (275, 40, 430)
+
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(tip);
+console.log(`The bill was ${bill}, the tip is ${bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2}, and the total value is ${bill + tip}.`);
+*/
+
