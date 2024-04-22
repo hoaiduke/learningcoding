@@ -69,3 +69,44 @@ function fruitProcessor(kiwi, lemon) {
 console.log(fruitProcessor(2, 3));
 */
 
+// 2. ARRAY: TO STORE MULTIPLE VALUE IN ONE VARIABLE
+/*
+const age = birthyear => 2024 - birthyear;
+const friends = ['Hoang', 'Thang', 'Long'];
+const years = [2001, 2004, 2008, 1993, 1982];
+// or
+const me = ['Hoai Duc', 'Trinh', age(2001), friends.length]; // can store multiple value in an array
+
+console.log(friends);
+console.log(years[3]);
+console.log(me);
+
+friends[0] = 'Tuan'; // CHANGE DATA WITHIN ARRAY
+console.log(friends);
+
+function calcAge(age) {
+    return age / 2;
+}
+console.log(calcAge(20));
+console.log(calcAge(years[0]));
+console.log(calcAge(years[years.length - 1]));
+
+// add and remove value to the end of an array
+
+friends.push('Ngoc'); // add value to the end of an array 
+console.log(friends);
+
+friends.unshift('Trinh'); // add value to the begin of an array
+console.log(friends);
+
+// remove value from array
+
+friends.pop(); // remove value from the end of an array 
+console.log(friends);
+
+friends.shift(); // remove value from the beginning of an array
+console.log(friends);
+*/
+
+
+
