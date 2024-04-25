@@ -108,5 +108,53 @@ friends.shift(); // remove value from the beginning of an array
 console.log(friends);
 */
 
+// OBJECT METHOD:
+
+const duc = {
+    firstName: 'Duc',
+    lastName: 'Trinh',
+    birthYear: 2001,
+    money: 20000,
+    friends: ['Nam', 'Hminh', 'Tuan', 'Duy'],
+    hasDriverLicense: false,
+    job: 'coder',
+
+    //calcAge: function (birthYear) {
+    //    return 2024 - birthYear
+    //},
+
+    //calcAge: function () {
+    //    console.log(this);
+    //    return 2024 - this.birthYear;
+    //},
+
+    calcAge: function () {
+        this.age = 2024 - this.birthYear
+        return this.age
+    },
+
+    drivingLicense: function () {
+        if (this.hasDriverLicense) {
+            return "a driver's license!";
+        } else {
+            return "no driver's license!";
+        }
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver's license.`
+    }
+};
+console.log(duc.calcAge());
+console.log(duc['calcAge']());
+console.log(duc.age);
+
+// CHALLENGE:
+// " Duc is a 23-year old coder, and he has a driver's license"
+console.log(`${duc.firstName} is a ${duc.calcAge()}-year old ${duc.job}, and he has ${duc.drivingLicense()}`);
+
+console.log(duc.getSummary());
+
+
 
 
