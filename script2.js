@@ -155,6 +155,51 @@ console.log(`${duc.firstName} is a ${duc.calcAge()}-year old ${duc.job}, and he 
 
 console.log(duc.getSummary());
 
+//////////////////////////////////////
+
+// 5. Loop:
+
+// for (let rep = 1; rep <= 10; rep++) {//(rep++ = (rep = rep + 1))
+//     console.log(`Nam ate ${rep} burger`);
+// }
+
+///////////////////////////
+
+const types = [];
+
+const ducArray = [
+    'Hoai Duc',
+    'Trinh',
+    2024 - 2001,
+    'coder',
+    ['Nam', 'Hminh', 'Duy', 'Nhat']
+];
+
+for (let i = 0; i < ducArray.length; i++) {
+    // console.log(ducArray);
+    // reading from ducArray
+    // console.log(ducArray[i], typeof ducArray[i]);
+
+    // filling from ducArray
+    // types[i] = ducArray[i];
+
+    //
+    types.push(ducArray[i]);
+};
+
+// console.log(types);
+
+const years = [2001, 2293, 1998, 2098, 1299];
+
+const age = [];
+
+for (let i = 0; i < years.length; i++) {
+    age.push(2024 - years[i]);
+}
+
+console.log(age);
+console.log(age);
+
 
 
 
